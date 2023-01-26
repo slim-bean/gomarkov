@@ -31,3 +31,8 @@ func (s *spool) get(str string) (int, bool) {
 	index, ok := s.stringMap[str]
 	return index, ok
 }
+
+func (s *spool) getStr(i int) (string, bool) {
+	st, ok := s.intMap[i]
+	return st, ok
+}
